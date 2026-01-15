@@ -36,8 +36,6 @@ This project is a simple AI chatbot built using Python and Natural Language Proc
 
 3. Type messages in terminal and interact with the chatbot.
 
-## Example
-User: What is NLP?  
-Bot: Natural Language Processing is a field of AI that helps computers understand human language.
-*OUTPUT*:
+## OUTPUT
+
 <img width="914" height="613" alt="Image" src="https://github.com/user-attachments/assets/c6a2dff5-a6b9-4cbf-ba0c-7cdc2474815e" />
