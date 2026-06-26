@@ -7,20 +7,19 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Download required NLTK data files for tokenization and lemmatization
+
 nltk.download('punkt')
 nltk.download('wordnet')
 
 from nltk.stem import WordNetLemmatizer
 
-# Initialize the WordNet lemmatizer
 lemmatizer = WordNetLemmatizer()
 
-# Read the dataset (text file) and convert content to lowercase
+
 with open('data.txt', 'r', errors='ignore') as file:
     raw_data = file.read().lower()
 
-# Tokenize the dataset into sentences and words
+
 sent_tokens = nltk.sent_tokenize(raw_data)   # Sentence-level tokenization
 word_tokens = nltk.word_tokenize(raw_data)   # Word-level tokenization
 
@@ -70,7 +69,7 @@ def chatbot_response(user_input):
     else:
         return sent_tokens[index]
 
-# ---------------- MAIN CHAT LOOP ----------------
+
 print("CODTECH Chatbot: Hello! Type 'bye' to exit.")
 
 while True:
